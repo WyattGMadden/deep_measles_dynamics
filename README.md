@@ -16,7 +16,7 @@ This repo contains instructions to reproduce all figures and tables referenced i
 git clone https://github.com/wyattgmadden/deep_measles_dynamics.git
 cd deep_measles_dynamics
 ```
-### **2. Set Up Conda python Environment
+### **2. Set Up Conda python Environment**
 
 ```bash
 # Create the Conda environment from the environment.yml file
@@ -25,7 +25,7 @@ conda env create -f environment.yml
 # Activate the Conda environment
 conda activate finalmlenv
 ```
-### **3. Set up renv R environment
+### **3. Set up renv R environment**
 
 ```bash
 Rscript -e "install.packages('renv', repos='https://cloud.r-project.org')"
