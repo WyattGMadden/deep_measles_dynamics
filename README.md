@@ -6,7 +6,7 @@ This repo contains instructions to reproduce all figures and tables referenced i
 ## Prerequisites
 
 - [Anaconda or Miniconda](https://docs.conda.io/en/latest/miniconda.html) installed
-- [R](https://www.r-project.org/) installed (if not managed via Conda)
+- [R](https://www.r-project.org/) installed 
 
 ## Installation Instructions
 
