@@ -1,5 +1,6 @@
 # Deep-learning neural networks for endemic measles dynamics: comparative analysis and integration with mechanistic models
 
+
 This repo contains instructions to reproduce all figures and tables referenced in paper. 
 
 ## Prerequisites
@@ -24,7 +25,7 @@ conda env create -f environment.yml
 # Activate the Conda environment
 conda activate finalmlenv
 ```
-### **2. Set up renv R environment
+### **3. Set up renv R environment
 
 ```bash
 Rscript -e "install.packages('renv', repos='https://cloud.r-project.org')"
@@ -39,5 +40,7 @@ make all
 ```
 
 Figures and tables will be created in 'output/figures/' and 'output/tables/' directories respectively. 
+
+To explore certain components of the code and better understand the structure of the codebase, please inspect the makefile. Note that later targets in the makefile may depend on outputs generated in previous targets.
 
 
