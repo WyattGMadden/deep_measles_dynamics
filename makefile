@@ -56,24 +56,24 @@ createfig4:
 # Create Fig 5 (spatial + temporal plot) 
 # Fig5: output/figures/fig5_spat_temp.png
 createfig5:
-	Rscript code/r/basic_nn/map_plots.R
+	cd code/r/basic_nn && Rscript map_plots.R
 
 # Create Fig 6 (London BIF)
 # FigS1: output/figures/nn_compare_london_k1to4_nonlog_bif.png
 createfig6:
 	mkdir -p output/models/basic_nn_bif
-	./code/python/basic_nn/full_basic_bif.sh
+	cd code/python/basic_nn && .full_basic_bif.sh
 	mkdir -p output/data/basic_nn_bif
-	Rscript code/r/basic_nn/basic_nn_bif_process.R
-	Rscript code/r/basic_nn/basic_nn_bif_plots.R
+	cd code/r/basic_nn && Rscript basic_nn_bif_process.R
+	cd code/r/basic_nn && Rscript basic_nn_bif_plots.R
 
 # Create Tab S1 (Train/Test year cutoff sensitivity analysis)
 # TabS2: output/tables/test_train_cutoff_basic_tsir_rmse.csv
 createtabs1:
 	mkdir -p output/models/basic_nn_optimal_60
 	mkdir -p output/models/basic_nn_optimal_62
-	./code/python/basic_nn/full_basic_optimal_60.sh
-	./code/python/basic_nn/full_basic_optimal_62.sh
+	cd code/python/basic_nn && ./full_basic_optimal_60.sh
+	cd code/python/basic_nn && ./full_basic_optimal_62.sh
 	mkdir -p output/data/basic_nn_optimal_60
 	mkdir -p output/data/basic_nn_optimal_62
 	Rscript code/r/basic_nn/compare_basic_nn_60_61_62_tsir.R

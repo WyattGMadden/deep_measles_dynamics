@@ -27,7 +27,7 @@ conda activate finalmlenv
 ### **2. Set up renv R environment
 
 ```bash
-Rscript -e "install.packages('renv')"
+Rscript -e "install.packages('renv', repos='https://cloud.r-project.org')"
 Rscript -e "renv::restore()"
 ```
 

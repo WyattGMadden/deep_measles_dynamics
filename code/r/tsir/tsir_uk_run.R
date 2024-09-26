@@ -13,7 +13,7 @@ births <- read_csv("../../../data/data_from_measles_LASSO/births_urban.csv") %>%
     pivot_longer(2:ncol(.), names_to = "city", values_to = "births") %>%
     mutate(births = births / 26)
 
-inf_pop_urb <- read_csv("../../../data/data_from_measles_competing_risks/inf_pop_urb.csv") %>%
+inf_pop_urb <- read_csv("../../../data/data_from_measles_competing_risks/inferred_pop_urban.csv") %>%
     rename("time" = `...1`) %>% 
     pivot_longer(2:ncol(.), names_to = "city", values_to = "pop")
 
