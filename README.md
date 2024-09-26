@@ -12,8 +12,8 @@ This repo contains instructions to reproduce all figures and tables referenced i
 ### **1. Clone the Repository**
 
 ```bash
-git clone https://github.com/yourusername/yourrepository.git
-cd yourrepository
+git clone https://github.com/wyattgmadden/deep_measles_dynamics.git
+cd deep_measles_dynamics
 ```
 ### **2. Set Up Conda python Environment
 
