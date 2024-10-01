@@ -8,7 +8,7 @@ all: createfig1 createfig2 createfig3 createfig4 createfig5 createtabs1 clean
 # Fig1: output/figures/feedforward_network_structure.png
 createfig1:
 	mkdir -p output/figures/
-	cd code/python/basic_nn/plotting && python nn_architecture_plots.py
+	cd code/python/basic_nn/plotting && ./gen_plot.sh
 
 # Create Fig 2 (SFFN vs TSIR) 
 # Fig2: output/figures/rmse_reg_and_gain_nn_tsir_k_facet.png
