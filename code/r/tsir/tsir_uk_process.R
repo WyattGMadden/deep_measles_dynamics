@@ -36,4 +36,4 @@ tsir_dat <- list.files("../../../output/data/tsir/uk/processed/", full.names = T
 
 
 
-write_csv(tsir_dat, "../../../output/data/basic_nn_yearcutoff_optimal/tsir_preds_processed.csv")
+write_csv(tsir_dat, "../../../output/data/basic_nn_optimal/tsir_preds_processed.csv")

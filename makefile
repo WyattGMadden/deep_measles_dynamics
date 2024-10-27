@@ -17,6 +17,7 @@ createfig2:
 	mkdir -p output/data/tsir/uk/raw
 	cd code/r/tsir && Rscript tsir_uk_run.R
 	mkdir -p output/data/tsir/uk/processed
+	mkdir -p output/data/basic_nn_optimal
 	cd code/r/tsir && Rscript tsir_uk_process.R
 	mkdir -p output/data/tsir_susceptibles
 	cd code/r/tsir && Rscript tsir_susceptibles_gen.R
@@ -26,7 +27,6 @@ createfig2:
 	#fit neural nets
 	mkdir -p output/models/basic_nn_optimal
 	cd code/python/basic_nn && ./full_basic_optimal.sh
-	mkdir -p output/data/basic_nn_optimal
 	cd code/r/basic_nn && Rscript optimal_basic_nn_process.R
 	cd code/r/basic_nn && Rscript cases_process.R
 	#make plots
